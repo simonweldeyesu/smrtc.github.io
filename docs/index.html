@@ -1,9 +1,160 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Weldeyesus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
-<h1>Simon Weldeyesus</h1>
-<p>Student of Computer Science at Renton Technical College </p>
-<p>stweldeyesus@student.rtc.edu</p>
+</head>
+<body>
+    <header>
+        <a href="#simon" class="logo">Simon</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+            <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#contacts" onclick="toggleMenu();">Contacts</a></li>
+        </ul>
+    </header>
+    <section class="hero-image" id="simon">
+        <div class="textBx">
+            <h2>Hello, I'm<br><span>Simon Weldeyesus</span></h2>
+            <h3>Full Stack Web Developer</h3>
+            <h3>Seattle, Wa</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+     <div class="heading">
+        <h2>PORTFOLIO</h2>
+        <P>Some of works I have done in Front-End Development.</P>
+     </div>
+     <div class="image-project" id="Puppy-Image">
+        <div class="image-project-details">
+          <div class="image-project-description">
+            <h4>Puppy Gallery</h4>
+            <p>I did this project in Front-End Development. I had to get all of the puppies picture from this free copyright picture. This project was to make a gallary that Keeps all your pictures nice and orgainized. I used html and CSS to make it. I enjoyed working on this project. 
+            </p>
+          </div>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <div class="image-project" id="Form-Image">
+        <div class="image-project-details">
+          <div class="image-project-description">
+            <h4>Enrollemnt Form </h4>
+            <p>Enrollment Form for school is something I worked on in Front-End Development.Used to resgister to school, you enter everything tells you on this app. I used html and CSS for this one also. Really helpfull tool when it comes to register school online.</p>
+          </div>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <div class="image-project" id="ClassSchedule-Image">
+        <div class="image-project-details">
+          <div class="image-project-description">
+            <h4>Class Schedule</h4>
+            <p>A table with class schedule is a tool to remind you what days you have class. I made it using HTML and CSS.</p>
+          </div>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <div class="image-project" id="Table-Image">
+        <div class="image-project-details">
+          <div class="image-project-description">
+            <h4>population</h4>
+            <p>A table with population data tracks how population changes over the years. Something I created in Front-End Development using HTML and CSS.</p>
+          </div>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+
+     <div class="heading">
+        <a href="#" class="btn">View More</a>
+     </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+         <div class="contentBx w50">
+             <h3>Full Stack Web Developer</h3>
+             <p>My name is Simon Weldeyesus. This is my second year in Renton Technical College and first time in Client-Side Scripting. I am learning how to create websites in Client-Side Scripting. On the Top and Bottom are some of the skills and projects I have aquired through my education. This year I am getting my associate degree for  Computer Science.</p>
+         </div>   
+         <div class="w50">
+             <img src="image/img1.jpg" class="img">
+         </div>
+        </div>
+    </section>
+    <section class="contact" id="contacts">
+        <div class="heading">
+            <h2>HOW TO CONTACT ME</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                   <div class="box">
+                    <div class="icon">
+                    <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="text">                  
+                        <h3><a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email</a>
+                            </h3>
+                            <p>simontesfay76@gmail.com</p>                                       
+                    </div>
+                   </div>
+                   <div class="box">
+                    <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="text">                  
+                        <h3><a href="https://www.facebook.com/">FaceBook</a>
+                        </h3>
+                        <p>Simon Tesfay</p>                           
+                    </div>
+                   </div>
+                   <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <div class="text">
+                        <h3><a href="https://www.linkedin.com/in/simon-weldeyesus-253830229/">Linkedin</a>
+                        </h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="send">
+                </form>
+        </div>
+        </div>
+    </section>
+    <footer>      
+    <div class="copyright">
+        <p>Copyright @2021 All rights reserved | Created by <a href="mailTO:simontesfay76@gmail.com">Simon Weldeyesus</a></p>
+    </div>
+</footer>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+   
+    </script>
 </body>
 </html>
